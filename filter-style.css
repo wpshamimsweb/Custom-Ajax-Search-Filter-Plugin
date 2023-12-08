@@ -1,0 +1,89 @@
+.column-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+ 
+.column-wrap .column {
+    width: 49%;
+}
+ 
+.column-wrap .column:last-child {
+    float: right;
+}
+ 
+#boiwala-ajax-filter-search label {
+    display: block;
+    font-weight: bold;
+}
+ 
+#boiwala-ajax-filter-search select {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 0.625em 0.4375em;
+    border: 1px solid #d1d1d1;
+}
+input[type=search], input[type=tel], input[type=text], input[type=number] {
+    border: 1px solid #d1d1d1 !important;
+}
+#boiwala-ajax-filter-search-results {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+ 
+#boiwala-ajax-filter-search-results li {
+    width: 23.5%;
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+ 
+#boiwala-ajax-filter-search-results li.boiwala-no-result {
+    width: 100%;
+    text-align: center;
+}
+ 
+#boiwala-ajax-filter-search-results li:nth-child(4n+4) {
+    margin-right: 0;
+}
+ 
+#boiwala-ajax-filter-search-results .book-info h4 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+ 
+#boiwala-ajax-filter-search-results .book-info p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 13px;
+}
+ 
+#boiwala-ajax-filter-search-results .book-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    opacity: ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all .3s;
+}
+ 
+#boiwala-ajax-filter-search-results .book-info * {
+    width: 100%;
+    display: block;
+}
+ 
+#boiwala-ajax-filter-search-results li:hover .boiwala-book-info {
+    opacity: 1;
+}
